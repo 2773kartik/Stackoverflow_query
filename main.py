@@ -7,25 +7,33 @@ def callback(url):
    webbrowser.open_new_tab(url)
 
 from tkinter import *
+from tkinter import ttk
 import tkinter.font as tkFont
 
 root = Tk()
 root.title("StackOverflow Query")
 root.geometry("700x700")
 
+styles = ttk.Style(root)
+styles.theme_use('clam')
 
 fonts = tkFont.Font(family="Helvetica",size=36,weight="bold")
 font1 = tkFont.Font(family="Helvetica",size=20)
 font2 = tkFont.Font(family="Helvetica",size=15)
 font3 = tkFont.Font(family="Helvetica",size=10)
 
+canvas = Canvas(root, width=200, height=200)
+canvas.pack(side=TOP)
+img = PhotoImage(file = "stck.png")
+canvas.create_image(20,20,anchor=NW, image=img)
+
 w = Label(root, text='StackOverflow Query', font=fonts, fg="blue")
 w.pack()
-q = Label(root, text='By Kartik Tiwari', font=font1)
+q = Label(root, text='By Kartik Tiwari', font=font1, pady=10)
 q.pack()
 
-e = Entry(root)
-e.pack()
+e = Entry(root, bd= 6, selectborderwidth=3, font=font2)
+e.pack(fill=X)
 e.focus_set()
    
 frame = Frame(root)
