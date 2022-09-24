@@ -10,3 +10,4 @@ Libraries used:
 4. metadata_parser (requires bs4) --> pip install bs4, pip install metadata_parser
 
 Run on terminal with : python main.py
+install.carbon - generates the script as a python file
