@@ -12,3 +12,4 @@ API used : https://api.stackexchange.com/docs
 ## Usage
 - Run on terminal with : python main.py
 - Run in [Carbon explorer](https://github.com/carbon-language/carbon-lang#getting-started) as install.carbon > main.py - generates the script as a python file
+![Alt text](/Screenshot 2022-09-28 114013.jpg?raw=true)
